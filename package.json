@@ -1,0 +1,24 @@
+{
+  "name": "sol-uriencode",
+  "version": "0.1.0",
+  "description": "Made it because it doesn't exist and we're doing some fun on-chain URI generation.",
+  "directories": {
+    "src": "src"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iainnash/sol-uriencode.git"
+  },
+  "author": "Iain Nash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iainnash/sol-uriencode/issues"
+  },
+  "homepage": "https://github.com/iainnash/sol-uriencode#readme"
+}
