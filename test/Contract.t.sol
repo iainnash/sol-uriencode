@@ -19,7 +19,10 @@ contract TestUriEncode is Test {
     }
 
     function testEveryEncodeChar() public {
-        assertEq(UriEncode.uriEncode("       .   "), "%20%20%20%20%20%20%20.%20%20%20");
+        assertEq(
+            UriEncode.uriEncode("       .   "),
+            "%20%20%20%20%20%20%20.%20%20%20"
+        );
     }
 
     function testNoEncodeAnyChar() public {
@@ -31,7 +34,7 @@ contract TestUriEncode is Test {
         );
     }
 
-    function testString(string memory input) public {
-        UriEncode.uriEncode(input);
+    function testStringDoesNotCrash(string memory input) public {
+        string memory solidityResult = UriEncode.uriEncode(input);
     }
 }
