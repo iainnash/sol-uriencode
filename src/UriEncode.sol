@@ -35,7 +35,8 @@ library UriEncode {
             } {
                 // advance 1 byte
                 dataPtr := add(dataPtr, 1)
-                let input := and(mload(dataPtr), 127)
+                // bytemask out a char
+                let input := and(mload(dataPtr), 255)
 
                 // Check if is valid URI character
                 let isValidUriChar := or(

@@ -18,6 +18,14 @@ contract TestUriEncode is Test {
         assertEq(UriEncode.uriEncode(""), "");
     }
 
+    function testNouns() public {
+        string memory nounsStr = unicode"/⌐◨-◨/";
+        assertEq(
+            UriEncode.uriEncode(nounsStr),
+            "%2f%e2%8c%90%e2%97%a8-%e2%97%a8%2f"
+        );
+    }
+
     function testEveryEncodeChar() public {
         assertEq(
             UriEncode.uriEncode("       .   "),

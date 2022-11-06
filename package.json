@@ -1,6 +1,6 @@
 {
   "name": "sol-uriencode",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Made it because it doesn't exist and we're doing some fun on-chain URI generation.",
   "directories": {
     "src": "src"
